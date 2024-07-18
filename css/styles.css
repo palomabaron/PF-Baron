@@ -22,27 +22,18 @@ header nav img {
 /* BOTON */
 
 .boton {
-    background-color: #000000; 
-    color: #fff; 
-    border: none; 
-    padding: 10px 20px;  
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 16px; 
-    cursor: pointer; 
-    border-radius: 4px; 
-    margin: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .boton:hover {
-    background-color: #64412c; 
+    background-color: #b38e5e;
 }
-
-.boton:active {
-    background-color: #754427; 
-}
-
-/**-----MAIN-----*/
 
 /**-----INDEX-----*/
 
@@ -182,7 +173,6 @@ header nav img {
     object-fit: cover;
 }
 
-
 .img-1 {
     grid-row: span 2;
 }
@@ -208,10 +198,30 @@ header nav img {
     height: 60px
 }
 
+.accordion {
+    margin: 10px;
+    padding: 50px;
+}
+.accordion h2 {
+    text-align: center;
+}
+
+.accordion-button:focus, .accordion-button.collapsed:focus {
+    box-shadow: none;
+    background-color: #d1a38a; 
+    border-color: #d1a38a; 
+    color: white; 
+}
+.accordion-button:active {
+    background-color: #d1a38a; 
+    border-color: #d1a38a; 
+    color: white; 
+}
+.accordion-button {
+    font-weight: bold;
+}
 
 /**-----call to action-----*/
-
-
 
 .container {
     display: flex;
@@ -248,91 +258,131 @@ header nav img {
 /**-----PRODUCTOS-----*/
 
 
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.titulo-principal {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.productos {
+    padding: 70px;
+    margin-top: 70px;
+}
+
+.productos h2, .productos p {
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    background: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(25% - 40px); 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 330px; 
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 23px; 
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 50px 20px;
+    background: #eee;
+}
+
 /**-----NOSOTROSS-----*/
 
-/* Sección nosotros1 */
+/* Sección */
+
 .nosotros1 {
-    background-color: #f9f9f9; 
+    background-color: #f2f2f2;
     padding: 40px 20px;
 }
 
 .nosotros1 .contenido {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.nosotros1 .texto {
-    flex: 1;
-    padding-right: 20px; 
+    justify-content: space-around;
+    max-width: 1400px; 
+    margin: 20px auto; 
+    flex-wrap: wrap;
 }
 
 .nosotros1 .imagen {
     flex: 1;
-    text-align: center; 
+    margin-left: 60px; 
+    order: 2; 
 }
 
-.nosotros1 h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+.nosotros1 .texto {
+    flex: 1;
+    order: 1; 
 }
 
-.nosotros1 p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.nosotros1 img {
-    max-width: 100%;
+.nosotros1 .imagen img {
+    width: 100%;
     height: auto;
-    border-radius: 3px; 
+    object-fit: cover;
 }
 
-/* Sección nosotros2 */
 .nosotros2 {
-    background-color: #f9f9f9; 
+    background-color: #f2f2f2;
     padding: 40px 20px;
 }
 
 .nosotros2 .contenido {
     display: flex;
-    flex-direction: row-reverse; 
-    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.nosotros2 .texto {
-    flex: 1;
-    padding-left: 20px; 
+    justify-content: space-around;
+    max-width: 1400px; 
+    margin: 20px auto; 
+    flex-wrap: wrap; 
 }
 
 .nosotros2 .imagen {
     flex: 1;
-    text-align: center; 
+    margin-right: 60px; 
 }
 
-.nosotros2 h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+.nosotros2 .texto {
+    flex: 1;
 }
 
-.nosotros2 p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.nosotros2 img {
-    max-width: 100%;
+.nosotros2 .imagen img {
+    width: 100%;
     height: auto;
-    border-radius:3px; 
+    object-fit: cover;
 }
+
 .frase {
     display: flex;
     justify-content: center;
@@ -355,68 +405,197 @@ header nav img {
   }
 
 /**-----WORKSHOPS-----*/
-
-.workshop-details {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
 }
 
-.workshop-details .content {
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%); 
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+}
+
+.workshops {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 50px;
+    background-color: #f7f7f7;
 }
 
-.workshop-details .text {
-    flex: 1;
-    max-width: 600px;
+.workshop-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 45%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; 
 }
 
-.workshop-details .text h2 {
-    font-size: 40px;
+.workshop-card:hover {
+    transform: translateY(-10px);
+}
+
+.workshop-card .image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.workshop-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.workshop-card .content {
+    padding: 20px;
+}
+
+.workshop-card .text h2 {
+    font-size: 2rem;
     margin-bottom: 10px;
+    color: #333;
 }
 
-.workshop-details .text h6 {
-    font-size: 18px;
+.workshop-card .text h6 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.workshop-card .text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.workshop-card .text ul {
+    list-style-type: none;
+    padding: 0;
     margin-bottom: 20px;
 }
 
-.workshop-details .text p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.workshop-details .text ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-.workshop-details .text ul li {
-    font-size: 18px;
+.workshop-card .text ul li {
+    font-size: 1rem;
     margin-bottom: 10px;
+    color: #444;
 }
 
-.workshop-details .image {
-    flex: 2;
-    max-width: 700px;
-    text-align: center;
-}
 
-.workshop-details .image img {
-    width: 700px;
-    height: auto;
-    border-radius: 5px;
-}
+
 /**-----CONTACTO-----*/
 
+.carousel-item  img {
+    width: 100%;
+    height: 400px;
+} 
 
+.form-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+    flex-wrap: wrap; 
+}
 
-/**-----FOTTER-----*/
+.form-image form {
+    flex: 1; 
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-image h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.image-container {
+    flex: 1; 
+    max-width: 700px;
+    width: 100%;
+    margin-left: 20px; 
+    overflow: hidden; 
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .col {
+        flex: 1;
+        margin-right: 10px; 
+    }    
+
+    /**-----FOTTER-----*/
 
 footer {
     background-color: #000000;
@@ -426,27 +605,16 @@ footer {
 
 .footer-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    flex-wrap: wrap;
 }
 
 .footer-section {
-    flex: 1;
+    flex: 1 1 300px; 
     margin: 10px;
-    min-width: 200px;
-}
-
-.logo-section {
-    text-align: center;
-}
-
-.logo-section img.logo {
-    max-width: 150px;
-    margin-bottom: 10px;
 }
 
 .footer-section h3 {
@@ -496,11 +664,24 @@ footer {
     text-decoration: none;
 }
 
-/**-----Responsive-----*/ 
+.logo {
+    width: 160px;
+    height: 160px;
+    justify-content: left;
+}
 
-@media screen and (max-width:950px){
+/**-----Responsive-----*/ 
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width:950px) {
     .grid-galeria {
-        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 320px;
     }
     .grid-item {
@@ -532,6 +713,27 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    .workshop-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay h2 {
+        font-size: 2rem;
+    }
+    .overlay p {
+        font-size: 1.2rem;
+    }
+    .form-row {
+        flex-direction: column; 
+    }
+    .card {
+        width: calc(100% - 40px);
+    }
+}
+
 @media screen and (max-width:504px) {
     header nav ul {
         flex-direction: column;
@@ -542,6 +744,25 @@ footer {
     }
     header nav ul li a {
         font-size: 16px;
+    }
+    .nosotros1 .contenido, 
+    .nosotros2 .contenido {
+        flex-direction: column;
+    }
+    .nosotros1 .imagen,
+    .nosotros2 .imagen,
+    .nosotros1 .texto,
+    .nosotros2 .texto {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay h2 {
+        font-size: 1.5rem;
+    }
+    .overlay p {
+        font-size: 1rem;
     }
 }
 
@@ -554,14 +775,10 @@ footer {
 
 @media screen and (max-width:480px) {
     .grid-galeria {
-        grid-template-columns: 1fr ;
-        
+        grid-template-columns: 1fr;
     }
     .grid-item {
         grid-column: span 1;
         grid-row: span 1;
     }
 }
-
-
-

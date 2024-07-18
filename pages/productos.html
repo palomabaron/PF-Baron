@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Serika | Cerámica Artesanal</title>
 </head>
+
 <body>
-    <header> 
+    <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"> <img src="../img/serikalogo.png" alt=""></a>
@@ -26,8 +29,8 @@
                             <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./productos.html" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="./productos.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Productos
                             </a>
                             <ul class="dropdown-menu">
@@ -54,98 +57,140 @@
     </header>
     <main>
         <section>
-            <img src="" alt="Portada de la seccion workshops">
-            <div>
-                <h2>Titulo de la pagina de Workshop</h2>
-            </div>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/slideproductos1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/slideproductos2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/slideproductos3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
         <section class="productos">
             <h2>Nuestros Productos</h2>
-            <p class="subtitulo">Descubre nuestra colección exclusiva</p>
-        
-            <div class="card">
-                <img src="" alt="">
-                <div class="card-content">
-                    <h3>Producto1</h3>
-                    <a href="#" class="boton">Comprar</a>
+            <p class="subtitulo">Explora nuestra variedad de productos únicos</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="../img/producto1.jpg" alt="taza ondulada">
+                    <div class="card-content">
+                        <h3>Taza Nube XL</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/producto2.jpg" alt="tazon de ceramica">
+                    <div class="card-content">
+                        <h3>Tazon Salpicon</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/producto3.jpg" alt="Florero ondulado">
+                    <div class="card-content">
+                        <h3>Florero Brisa</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/producto4.jpg" alt="Maceta de ceramica">
+                    <div class="card-content">
+                        <h3>Maceta Autoregable</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/producto5.jpg" alt="Florero ondulado">
+                    <div class="card-content">
+                        <h3>Florero Salpicado</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/producto6.jpg" alt="Mate dos asas">
+                    <div class="card-content">
+                        <h3>Mate Flores</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/producto7.jpg" alt="Taza ondulada">
+                    <div class="card-content">
+                        <h3>Taza Nube</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/producto8.jpg" alt="Macetas de flores">
+                    <div class="card-content">
+                        <h3>Maceta Margaritas</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/producto9.jpg" alt="Cuencos de ceramica">
+                    <div class="card-content">
+                        <h3>Cuencos Salpicados Negros</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/producto10.jpg" alt="Cuencos de ceramica">
+                    <div class="card-content">
+                        <h3>Cuencos Salpicados Blancos</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/producto11.jpg" alt="Taza de té ceramica">
+                    <div class="card-content">
+                        <h3>Taza Tierra</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/producto12.jpg" alt="Mate dos asas de cerámica">
+                    <div class="card-content">
+                        <h3>Mate Salpicado</h3>
+                        <a href="#" class="boton">Comprar</a>
+                    </div>
                 </div>
             </div>
-        
-            <div class="card">
-                <img src="" alt="">
-                <div class="card-content">
-                    <h3>Producto2</h3>
-                    <a href="#" class="boton">Comprar</a>
-                </div>
-            </div>
-        
-            <div class="card">
-                <img src="" alt="">
-                <div class="card-content">
-                    <h3>Producto3</h3>
-                    <a href="#" class="boton">Comprar</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <div class="card-content">
-                    <h3>Producto5</h3>
-                    <a href="#" class="boton">Comprar</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <div class="card-content">
-                    <h3>Producto6</h3>
-                    <a href="#" class="boton">Comprar</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <div class="card-content">
-                    <h3>Producto7</h3>
-                    <a href="#" class="boton">Comprar</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <div class="card-content">
-                    <h3>Producto8</h3>
-                    <a href="#" class="boton">Comprar</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <div class="card-content">
-                    <h3>Producto9</h3>
-                    <a href="#" class="boton">Comprar</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <div class="card-content">
-                    <h3>Producto10</h3>
-                    <a href="#" class="boton">Comprar</a>
-                </div>
             </div>
         </section>
-        <section>
-            <img src="" alt="">
-            <h2>Titulo Call to action</h2>
+        <section class="call-to-action">
+            <img src="imagen_call_to_action.jpg" alt="">
+            <h2>Quieres un prodcuto personlaz</h2>
             <p>Breve frase</p>
-            <button class="boton">Contactanos</button>
+            <a href="#" class="boton">Contactanos</a>
         </section>
     </main>
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="" alt="srika" class="logo">
-                <p>Creamos piezas de ceramica artesanal</p>
+                <img src="../img/logoserikablanco.png" alt="srika" class="logo">
             </div>
             <div class="footer-section">
                 <h3>UBICACIÓN</h3>
                 <p>Argentina —<br>
-                   Buenos Aires, Mar del Plata<br></p>
+                    Buenos Aires, Mar del Plata<br></p>
                 <p><a href="mailto:infoserika@gmail.com">infoserika@gmail.com</a></p>
             </div>
             <div class="footer-section">
@@ -162,8 +207,10 @@
                 <h3>REDES</h3>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/serika.arg/"><img src="../img/facebook.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com/ceramica_mdq/"><img src="../img/instagram.png" alt="Instagram"></a>
-                    <a href="https://www.tiktok.com/@ceramica.mdq?_t=8nAhhWP8C5F&_r=1"><img src="../img/tiktok.png" alt="TikTok"></a>
+                    <a href="https://www.instagram.com/ceramica_mdq/"><img src="../img/instagram.png"
+                            alt="Instagram"></a>
+                    <a href="https://www.tiktok.com/@ceramica.mdq?_t=8nAhhWP8C5F&_r=1"><img src="../img/tiktok.png"
+                            alt="TikTok"></a>
                 </div>
             </div>
         </div>
@@ -171,6 +218,9 @@
             <p>Serika©. All rights reserved. <a href="#">Políticas de Privacidad</a></p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

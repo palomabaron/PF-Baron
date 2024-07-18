@@ -28,8 +28,8 @@
                             <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Productos
                             </a>
                             <ul class="dropdown-menu">
@@ -93,53 +93,54 @@
             </section>
             <section class="destacados">
                 <h2>Productos Destacados</h2>
-                <div class="destacados-contenedor">
-                    <div>
-                        <img src="./img/producto1.jpg" alt="Taza de ceramica ondulada">
-                        <h3>Producto</h3>
-                        <a href="">Agregar Producto</a>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./img/producto1.jpg" alt="taza ondulada">
+                        <div class="card-content">
+                            <h3>Taza Nube XL</h3>
+                            <a href="#" class="boton">Comprar</a>
+                        </div>
                     </div>
-                    <div>
-                        <img src="./img/producto2.jpg" alt="Taza de ceramica recta grande">
-                        <h3>Producto</h3>
-                        <a href="">Agregar Producto</a>
+                    <div class="card">
+                        <img src="./img/producto2.jpg" alt="tazon de ceramica">
+                        <div class="card-content">
+                            <h3>Tazon Salpicon</h3>
+                            <a href="#" class="boton">Comprar</a>
+                        </div>
                     </div>
-                    <div>
-                        <img src="./img/producto3.jpg" alt="Floreor ondulado con sutiles hojas pintadas">
-                        <h3>Producto</h3>
-                        <a href="">Agregar Producto</a>
+                    <div class="card">
+                        <img src="./img/producto3.jpg" alt="Florero ondulado">
+                        <div class="card-content">
+                            <h3>Florero Brisa</h3>
+                            <a href="#" class="boton">Comprar</a>
+                        </div>
                     </div>
-                    <div>
-                        <img src="./img/producto4.jpg" alt="Macetas onduladas con compartimiento para poner agua">
-                        <h3>Producto</h3>
-                        <a href="">Agregar Produto</a>
+                    <div class="card">
+                        <img src="../img/producto4.jpg" alt="Maceta de ceramica">
+                        <div class="card-content">
+                            <h3>Maceta Autoregable</h3>
+                            <a href="#" class="boton">Comprar</a>
+                        </div>
                     </div>
-                </div>
             </section>
             <section class="grid-galeria">
                 <div class="grid-item img-1">
                     <img class="img-1" src="./img/imagen1.jpg" alt="">
-                    <h3>Imagen</h3>
                 </div>
                 <div class="grid-item img-2">
                     <img src="./img/imagen2.jpg" alt="">
-                    <h3>Imagen</h3>
                 </div>
                 <div class="grid-item img-3">
                     <img src="./img/imagen3.jpg" alt="">
-                    <h3>Imagen</h3>
                 </div>
                 <div class="grid-item img-4">
                     <img src="./img/imagen4.jpg" alt="">
-                    <h3>Imagen</h3>
                 </div>
                 <div class="grid-item img-5">
                     <img src="./img/imagen5.jpg" alt="">
-                    <h3>Imagen</h3>
                 </div>
                 <div class="grid-item img-6">
                     <img src="./img/imagen6.jpg" alt="">
-                    <h3>Imagen</h3>
                 </div>
             </section>
         </section>
@@ -152,28 +153,52 @@
             <img src="" alt="Persona modelando una pieza de ceramica">
             <div class="overlay"></div>
         </section>
-        <section class="faqs">
-            <h2>FAQS</h2>
-            <div class="faq-item">
-                <details>
-                    <summary>Pregunta 1</summary>
-                    <p>Respuesta 1</p>
-                </details>
-            </div>
-            <div class="faq-item">
-                <details>
-                    <summary>Pregunta 2</summary>
-                    <p>Respuesta 2</p>
-                </details>
-            </div>
-            <div class="faq-item">
-                <details>
-                    <summary>Pregunta 3</summary>
-                    <p>Respuesta 3</p>
-                </details>
-            </div>
-            <div class="fixed">
-                <img src="./img/whatsapp.png" alt="Boton de whatsapp">
+        <section>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <h2>FAQS</h2>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        </strong>¿Cuánto tiempo tarda en llegar mi pedido?</strong>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Nuestros pedidos de cerámica personalizados tienen un tiempo de
+                            entrega de entre 10 y 12 días hábiles. Te notificaremos cuando tu pedido esté en camino.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        </strong>¿Puedo personalizar las piezas de cerámica?</strong>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">¡Sí! Ofrecemos opciones de personalización en muchos de nuestros
+                            productos. Puedes elegir colores, diseños y agregar nombres o mensajes especiales.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            ¿Cómo puedo inscribirme en un workshop?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Puedes inscribirte en nuestros workshops a través de nuestra página
+                            web en la sección de talleres. Ahí encontrarás las fechas disponibles, los temas y los
+                            niveles de los talleres. También puedes contactarnos directamente para más información.
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="call-to-action">
@@ -208,8 +233,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="" alt="srika" class="logo">
-                <p>Creamos piezas de ceramica artesanal</p>
+                <img src="./img/logoserikablanco.png" alt="srika" class="logo">
             </div>
             <div class="footer-section">
                 <h3>UBICACIÓN</h3>

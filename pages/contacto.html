@@ -71,47 +71,45 @@
                 </div>
             </div>
         </section>
-        <section>
-            <!--Faltan las imagenes-->
-            <img src="" alt="Portada de la seccion contactanos">
-            <div>
-                <h2>Titulo de la pagina Contacto</h2>
-            </div>
-        </section>
         <section class="form-image">
             <form action="">
                 <h2>Formulario de contacto</h2>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <div class="col">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" required>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido">
-                </div>
-                <div>
+                <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
-                <div>
-                    <select name="" id="">Asunto
-                        <option value="">Consulta</option>
-                        <option value="">Workshops</option>
-                        <option value="">Mayorista</option>
-                        <option value="">Otros</option>
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <select name="asunto" id="asunto" required>
+                        <option value="consulta">Consulta</option>
+                        <option value="workshops">Workshops</option>
+                        <option value="mayorista">Mayorista</option>
+                        <option value="otros">Otros</option>
                     </select>
                 </div>
-                <div>
-                    <label for="">Escribi tu mensaje</label>
+                <div class="form-group">
+                    <label for="mensaje">Escribí tu mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
                 </div>
-                <div>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="button-group">
+                    <input type="submit" class="boton" value="Enviar">
+                    <input type="reset" class="boton" value="Limpiar">
                 </div>
-                <input type="submit" class="boton">
-                <input type="reset" class="boton">
             </form>
             <div class="image-container">
-                <img src="../img/contaco2.jpg" class="img-fluid" alt="...">
+                <img src="../img/contaco2.jpg" class="img-fluid" alt="Imagen de contacto">
             </div>
         </section>
         <section class="container">
@@ -138,8 +136,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="path/to/logo.png" alt="srika" class="logo">
-                <p>Creamos piezas de ceramica artesanal</p>
+                <img src="../img/logoserikablanco.png" alt="srika" class="logo">
             </div>
             <div class="footer-section">
                 <h3>UBICACIÓN</h3>
