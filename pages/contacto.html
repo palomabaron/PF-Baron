@@ -72,46 +72,51 @@
             </div>
         </section>
         <section class="form-image">
-            <form action="">
-                <h2>Formulario de contacto</h2>
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre" required>
+            <div class="grid-container">
+                <div class="form-container">
+                    <form action="">
+                        <h2>Formulario de contacto</h2>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" name="nombre" id="nombre" required>
+                                </div>
+                                <div class="col">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" name="apellido" id="apellido" required>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                            <label for="apellido">Apellido</label>
-                            <input type="text" name="apellido" id="apellido" required>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <select name="asunto" id="asunto" required>
+                                <option value="consulta">Consulta</option>
+                                <option value="workshops">Workshops</option>
+                                <option value="mayorista">Mayorista</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Escribí tu mensaje</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
+                        </div>
+                        <div class="button-group">
+                            <input type="submit" class="boton" value="Enviar">
+                            <input type="reset" class="boton" value="Limpiar">
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                <div class="image-container">
+                    <img src="../img/contaco2.jpg" alt="Cerámica">
                 </div>
-                <div class="form-group">
-                    <label for="asunto">Asunto</label>
-                    <select name="asunto" id="asunto" required>
-                        <option value="consulta">Consulta</option>
-                        <option value="workshops">Workshops</option>
-                        <option value="mayorista">Mayorista</option>
-                        <option value="otros">Otros</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Escribí tu mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
-                </div>
-                <div class="button-group">
-                    <input type="submit" class="boton" value="Enviar">
-                    <input type="reset" class="boton" value="Limpiar">
-                </div>
-            </form>
-            <div class="image-container">
-                <img src="../img/contaco2.jpg" class="img-fluid" alt="Imagen de contacto">
             </div>
         </section>
+        
         <section class="container">
             <div class="item">
                 <img src="../img/calidad.png" alt="Alta Calidad">

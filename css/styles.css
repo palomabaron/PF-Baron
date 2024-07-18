@@ -63,27 +63,39 @@ header nav img {
     color:white;
 }
 
+.categorias {
+    text-align: center;
+    margin: 40px 0;
+}
+
 .categorias h2 {
     text-align: center;
     padding: 20px;
     margin: 50px;
+    font-size: 24px;
+    color: #333;
 }
 
 .categorias-contenedor {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
 }
 
 .categorias .categorias-contenedor div {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
     text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 .categorias div img {
     width: 150px;
     height: 150px;
+    margin-bottom: 10px;
 }
 
 .categorias div p {
@@ -238,7 +250,8 @@ header nav img {
     height: 60px;
 }
 
-/* Estilos para la sección de preguntas frecuentes */
+/* Preguntas frecuentes */
+
 .accordion {
     margin: 10px;
     padding: 50px;
@@ -376,7 +389,7 @@ header nav img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(14, 14, 14, 0.432); 
     border-radius: 5px;
 }
 
@@ -474,6 +487,7 @@ header nav img {
 }
 
 /**-----WORKSHOPS-----*/
+
 .slider {
     position: relative;
     width: 100%;
@@ -585,8 +599,6 @@ header nav img {
     color: #444;
 }
 
-
-
 /**-----CONTACTO-----*/
 
 .carousel-item  img {
@@ -595,24 +607,26 @@ header nav img {
 } 
 
 .form-image {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     padding: 50px 0;
-    flex-wrap: wrap; 
 }
 
-.form-image form {
-    flex: 1; 
-    max-width: 600px;
-    width: 100%;
-    padding: 20px;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 60px; 
+    align-items: stretch; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-container {
     background-color: #f9f9f9;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-image h2 {
+.form-container h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #000;
@@ -640,31 +654,36 @@ header nav img {
 }
 
 .image-container {
-    flex: 1; 
-    max-width: 700px;
-    width: 100%;
-    margin-left: 20px; 
     overflow: hidden; 
 }
 
 .image-container img {
     width: 100%;
-    height: auto; 
-    border-radius: 10px;
+    height: 100%;
     object-fit: cover; 
+    border-radius: 10px;
 }
 
 .form-row {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
 }
 
 .form-row .col {
-        flex: 1;
-        margin-right: 10px; 
-    }    
-    
-/**-----FOTTER-----*/
+    flex: 1;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form-row .col {
+    flex: 1;
+}
+
+    /**-----FOTTER-----*/
 
 footer {
     background-color: #000000;
@@ -749,12 +768,30 @@ footer {
     .destacados .card {
         width: calc(33.333% - 40px);
     }
+    .categorias .categorias-contenedor div {
+        width: calc(25% - 40px); 
+    }
+}
 
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .image-container img {
+        height: auto; 
+    }
 }
 
 @media (max-width: 992px) {
     .destacados .card {
-        width: calc(50% - 40px); /* 2 cards por fila en pantallas medianas */
+        width: calc(50% - 40px); 
+    }
+}
+
+@media (min-width: 900px) {
+    .categorias .categorias-contenedor div {
+        width: calc(33.333% - 40px); 
     }
 }
 
@@ -819,6 +856,29 @@ footer {
         max-width: 100%; 
         margin-bottom: 20px; 
     }
+    .categorias .categorias-contenedor div {
+        width: calc(50% - 40px); 
+    }
+    .form-container {
+        padding: 15px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+@media (min-width: 600px) {
+    .categorias .categorias-contenedor div {
+        width: 100%; 
+    }
 }
 
 @media screen and (max-width:504px) {
@@ -850,6 +910,28 @@ footer {
     }
     .overlay p {
         font-size: 1rem;
+    }
+    .form-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.8rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-group input {
+        width: 100%;
     }
 }
 
