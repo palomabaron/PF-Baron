@@ -57,6 +57,7 @@ header nav img {
     color: white;
     padding: 10px;
 }
+
 .hero p {
     font-size: 18px;
     color:white;
@@ -65,6 +66,7 @@ header nav img {
 .categorias h2 {
     text-align: center;
     padding: 20px;
+    margin: 50px;
 }
 
 .categorias-contenedor {
@@ -89,64 +91,53 @@ header nav img {
     text-align: center;
 }
 
-.serika {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+.destacados {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
     padding: 40px;
 }
 
-.serika div {
-    width: 50%;
-}
-.serika div h2 {
-    font-size: 35px;
-}
-.serika img {
-    width:400px;
-    height:600px;;
-}
-
-.destacados .destacados-contenedor div {
-    border: 1px solid grey;
-    width: 300px;
-    height: 370px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.destacados-contenedor {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
 .destacados h2 {
-    text-align: center;
-    padding: 30px;
-}
-.destacados div h3 {
-    font-size: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-.destacados div a {
-    text-decoration: none;
-    color: white;
-    background-color: black; 
-    padding: 15px;
-    border-radius: 4px; 
-}
-.destacados div a:hover{
-    color: rgb(230, 186, 150) 
+.destacados .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 70px;
 }
 
-.destacados div img {
-    width: 300px;
-    height:250px;
+.destacados .card {
+    background: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(25% - 40px); 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 60px;
+}
+
+.destacados .card img {
+    width: 100%;
+    height: 330px; 
     object-fit: cover;
+}
+
+.destacados .card-content {
+    padding: 23px;
+    text-align: center;
+}
+
+.destacados .card-content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px;
+}
+.preguntas-frecuentes {
+    margin-top: 150px; 
+    margin-bottom: 150px; 
 }
 
 .grid-galeria{
@@ -185,41 +176,95 @@ header nav img {
     grid-row: span 2;
 }
 
+/* Slider de Llamado a la Acción Index */
+.home-call-to-action-slider {
+    position: relative;
+    height: 600px; 
+    background-image: url('../img/homeslidercalltoaction.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-call-to-action-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 5px;
+}
+
+.home-cta-slider-content {
+    position: relative;
+    z-index: 1; 
+    padding: 20px;
+    text-align: center;
+    color: #ffffff; 
+    max-width: 600px; 
+}
+
+.home-cta-slider-text {
+    padding: 20px;
+}
+
+.home-cta-slider-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home-cta-slider-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+
 /**-----BOTON WHATSAPP-----*/
 
 .fixed {
     position: fixed;
     bottom: 100px;
     right: 50px;
+    z-index: 1000; 
 }
 
 .fixed img {
     width: 60px;
-    height: 60px
+    height: 60px;
 }
 
+/* Estilos para la sección de preguntas frecuentes */
 .accordion {
     margin: 10px;
     padding: 50px;
 }
+
 .accordion h2 {
     text-align: center;
 }
 
 .accordion-button:focus, .accordion-button.collapsed:focus {
     box-shadow: none;
-    background-color: #d1a38a; 
-    border-color: #d1a38a; 
-    color: white; 
+    background-color: #d1a38a;
+    border-color: #d1a38a;
+    color: white;
 }
+
 .accordion-button:active {
-    background-color: #d1a38a; 
-    border-color: #d1a38a; 
-    color: white; 
+    background-color: #d1a38a;
+    border-color: #d1a38a;
+    color: white;
 }
+
 .accordion-button {
     font-weight: bold;
 }
+
 
 /**-----call to action-----*/
 
@@ -229,6 +274,7 @@ header nav img {
     align-items: center;
     padding: 20px;
     background-color: #ffffff;
+    flex-wrap: wrap;
 }
 
 .item {
@@ -254,7 +300,6 @@ header nav img {
     color: #000000;
 }
 
-
 /**-----PRODUCTOS-----*/
 
 
@@ -271,7 +316,7 @@ header nav img {
 
 .productos {
     padding: 70px;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 .productos h2, .productos p {
@@ -313,11 +358,56 @@ header nav img {
     padding: 10px;
 }
 
-.call-to-action {
-    text-align: center;
-    padding: 50px 20px;
-    background: #eee;
+.call-to-action-slider {
+    position: relative;
+    height: 500px; 
+    background-image: url('../img/calltoaction2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.call-to-action-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 5px;
+}
+
+.cta-slider-content {
+    position: relative;
+    z-index: 1; 
+    padding: 20px;
+    text-align: center;
+    color: #ffffff; 
+    max-width: 600px; 
+}
+.cta-slider-content {
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px; 
+}
+
+.cta-slider-text {
+    padding: 20px;
+}
+
+.cta-slider-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.cta-slider-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 
 /**-----NOSOTROSS-----*/
 
@@ -382,27 +472,6 @@ header nav img {
     height: auto;
     object-fit: cover;
 }
-
-.frase {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height:100vh; 
-    padding: 20px;
-  }
-  
-.frase-titulo {
-    margin: 0 0 20px 0; 
-    color: #333; 
-    font-size: 40px; 
-    font-weight: bold; 
-  }
-  
-.frase-texto {
-    color:#666;
-    font-size: 16px; 
-    line-height: 1.6;
-  }
 
 /**-----WORKSHOPS-----*/
 .slider {
@@ -594,8 +663,8 @@ header nav img {
         flex: 1;
         margin-right: 10px; 
     }    
-
-    /**-----FOTTER-----*/
+    
+/**-----FOTTER-----*/
 
 footer {
     background-color: #000000;
@@ -677,6 +746,16 @@ footer {
     .card {
         width: calc(50% - 40px);
     }
+    .destacados .card {
+        width: calc(33.333% - 40px);
+    }
+
+}
+
+@media (max-width: 992px) {
+    .destacados .card {
+        width: calc(50% - 40px); /* 2 cards por fila en pantallas medianas */
+    }
 }
 
 @media screen and (max-width:950px) {
@@ -714,12 +793,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .workshop-card {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
     .overlay h2 {
         font-size: 2rem;
     }
@@ -731,6 +804,20 @@ footer {
     }
     .card {
         width: calc(100% - 40px);
+    }
+    .workshop-card {
+        width: 100%;
+    }
+    .destacados .card {
+        width: calc(100% - 40px); 
+    }
+    .container {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .item {
+        max-width: 100%; 
+        margin-bottom: 20px; 
     }
 }
 
