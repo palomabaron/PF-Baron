@@ -1,0 +1,23 @@
+.hero {
+    width: 100%;
+    height: calc(100vh - 204px);
+    text-align: center;
+    background-image:url(../img/slider1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font-size:35px;
+        color: white;
+        padding: 10px;
+    }
+    p {
+        font-size: 18px;
+        color:white;    
+    }
+}
