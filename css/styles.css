@@ -291,33 +291,6 @@ header nav img {
     height: 60px;
 }
 
-/* Preguntas frecuentes */
-
-.accordion {
-    margin: 10px;
-    padding: 50px;
-}
-
-.accordion h2 {
-    text-align: center;
-}
-
-.accordion-button:focus, .accordion-button.collapsed:focus {
-    box-shadow: none;
-    background-color: #d1a38a;
-    border-color: #d1a38a;
-    color: white;
-}
-
-.accordion-button:active {
-    background-color: #d1a38a;
-    border-color: #d1a38a;
-    color: white;
-}
-
-.accordion-button {
-    font-weight: bold;
-}
 
 
 /**-----call to action-----*/
