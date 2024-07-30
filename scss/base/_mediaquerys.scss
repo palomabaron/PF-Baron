@@ -1,241 +1,240 @@
-/* Media Queries */
-
+// Media Queries
 @media (max-width: 1200px) {
   .card {
-    width: calc(50% - 40px);
+      width: calc(50% - 40px);
   }
   .destacados .card {
-    width: calc(33.333% - 40px);
+      width: calc(33.333% - 40px);
   }
   .categorias .categorias-contenedor div {
-    width: calc(25% - 40px); 
+      width: calc(25% - 40px); 
   }
 }
 
 @media (max-width: 1024px) {
   .grid-container {
-    grid-template-columns: 1fr; 
+      grid-template-columns: 1fr; 
   }
 
   .image-container img {
-    height: auto; 
+      height: auto; 
   }
 
   .contenido {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   .texto, .imagen {
-    margin: 0;
+      margin: 0;
   }
 
   .imagen {
-    margin-top: 20px;
+      margin-top: 20px;
   }
 }
 
 @media (max-width: 992px) {
   .destacados .card {
-    width: calc(50% - 40px); 
+      width: calc(50% - 40px); 
   }
 }
 
 @media (min-width: 900px) {
   .categorias .categorias-contenedor div {
-    width: calc(33.333% - 40px); 
+      width: calc(33.333% - 40px); 
   }
 }
 
-@media screen and (max-width: 950px) {
+@media (max-width: 950px) {
   .grid-galeria {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 320px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 320px;
   }
 
   .grid-item {
-    grid-column: span 1;
-    grid-row: span 1;
+      grid-column: span 1;
+      grid-row: span 1;
   }
 }
 
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
   .serika {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   .serika div {
-    width: 80%;
-    text-align: center;
+      width: 80%;
+      text-align: center;
   }
 
   .serika img {
-    display: none;
+      display: none;
   }
 }
 
-@media screen and (max-width: 784px) {
+@media (max-width: 784px) {
   header {
-    flex-direction: column;
-    position: static;
+      flex-direction: column;
+      position: static;
   }
 
   .hero h2 {
-    font-size: 40px;
+      font-size: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .overlay h2 {
-    font-size: 2rem;
+      font-size: 2rem;
   }
 
   .overlay p {
-    font-size: 1.2rem;
+      font-size: 1.2rem;
   }
 
   .form-row {
-    flex-direction: column; 
+      flex-direction: column; 
   }
 
   .card, .workshop-card {
-    width: calc(100% - 40px);
+      width: calc(100% - 40px);
   }
 
   .container {
-    flex-direction: column; 
-    align-items: center;
+      flex-direction: column; 
+      align-items: center;
   }
 
   .item {
-    max-width: 100%; 
-    margin-bottom: 20px; 
+      max-width: 100%; 
+      margin-bottom: 20px; 
   }
 
   .categorias .categorias-contenedor div {
-    width: calc(50% - 40px); 
+      width: calc(50% - 40px); 
   }
 
   .form-container {
-    padding: 15px;
+      padding: 15px;
   }
 
   .form-group input,
   .form-group select,
   .form-group textarea {
-    padding: 8px;
-    font-size: 0.9rem;
+      padding: 8px;
+      font-size: 0.9rem;
   }
 
   .button-group {
-    flex-direction: column;
-    gap: 10px;
+      flex-direction: column;
+      gap: 10px;
   }
 
   .texto h2 {
-    font-size: 1.5rem;
+      font-size: 1.5rem;
   }
 
   .texto p {
-    font-size: 0.9rem;
+      font-size: 0.9rem;
   }
 
   .boton {
-    padding: 8px 16px;
+      padding: 8px 16px;
   }
 }
 
 @media (min-width: 600px) {
   .categorias .categorias-contenedor div {
-    width: 100%; 
+      width: 100%; 
   }
 }
 
-@media screen and (max-width: 504px) {
+@media (max-width: 504px) {
   header nav ul {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   header nav ul li {
-    margin: 0;
-    text-align: center;
+      margin: 0;
+      text-align: center;
   }
 
   header nav ul li a {
-    font-size: 16px;
+      font-size: 16px;
   }
 
   .nosotros1 .contenido, 
   .nosotros2 .contenido {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   .nosotros1 .imagen,
   .nosotros2 .imagen,
   .nosotros1 .texto,
   .nosotros2 .texto {
-    max-width: 100%;
+      max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .overlay h2 {
-    font-size: 1.5rem;
+      font-size: 1.5rem;
   }
 
   .overlay p {
-    font-size: 1rem;
+      font-size: 1rem;
   }
 
   .form-container h2 {
-    font-size: 1.5rem;
+      font-size: 1.5rem;
   }
 
   .form-group label {
-    font-size: 0.9rem;
+      font-size: 0.9rem;
   }
 
   .form-group input,
   .form-group select,
   .form-group textarea {
-    font-size: 0.8rem;
+      font-size: 0.8rem;
   }
 
   .button-group {
-    flex-direction: column;
-    gap: 10px;
+      flex-direction: column;
+      gap: 10px;
   }
 
   .button-group input {
-    width: 100%;
+      width: 100%;
   }
 
   .texto h2 {
-    font-size: 1.2rem;
+      font-size: 1.2rem;
   }
 
   .texto p {
-    font-size: 0.8rem;
+      font-size: 0.8rem;
   }
 
   .boton {
-    padding: 6px 12px;
+      padding: 6px 12px;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
   .hero h2 {
-    padding: 5px;
-    font-size: 35px;
+      padding: 5px;
+      font-size: 35px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .grid-galeria {
-    grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
   }
 
   .grid-item {
-    grid-column: span 1;
-    grid-row: span 1;
+      grid-column: span 1;
+      grid-row: span 1;
   }
 }

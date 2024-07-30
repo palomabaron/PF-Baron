@@ -48,7 +48,109 @@ header nav img {
     font-size: 18px;
     color: white; }
 
-/* Media Queries */
+.categorias {
+  text-align: center;
+  margin: 40px 0; }
+  .categorias h2 {
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    font-size: 24px;
+    color: #333; }
+  .categorias .categorias-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; }
+    .categorias .categorias-contenedor div {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      text-align: center;
+      padding: 40px;
+      box-sizing: border-box; }
+      .categorias .categorias-contenedor div img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px; }
+      .categorias .categorias-contenedor div p {
+        font-size: 15px;
+        text-align: center; }
+
+.nosotros1 .contenido .imagen {
+  flex: 1;
+  margin-left: 20px;
+  overflow: hidden; }
+  .nosotros1 .contenido .imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; }
+
+.nosotros1 .contenido .texto {
+  flex: 1;
+  margin-right: 20px; }
+  .nosotros1 .contenido .texto h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px; }
+  .nosotros1 .contenido .texto p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px; }
+
+.destacados {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  padding: 40px; }
+  .destacados h2 {
+    margin-bottom: 30px; }
+  .destacados .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 70px; }
+    .destacados .cards .card {
+      background: #ffffff;
+      border-radius: 5px;
+      overflow: hidden;
+      width: calc(25% - 40px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 60px; }
+      .destacados .cards .card img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover; }
+      .destacados .cards .card .card-content {
+        padding: 23px;
+        text-align: center; }
+        .destacados .cards .card .card-content h3 {
+          font-size: 20px;
+          margin: 10px 0;
+          padding: 10px; }
+
+.grid-galeria {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+  gap: 15px; }
+  .grid-galeria .grid-item {
+    position: relative; }
+    .grid-galeria .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .grid-galeria .grid-item.img-1 {
+      grid-row: span 2; }
+    .grid-galeria .grid-item.img-5 {
+      grid-column: span 2; }
+    .grid-galeria .grid-item.img-3 {
+      grid-row: span 2; }
+
 @media (max-width: 1200px) {
   .card {
     width: calc(50% - 40px); }
@@ -77,7 +179,7 @@ header nav img {
   .categorias .categorias-contenedor div {
     width: calc(33.333% - 40px); } }
 
-@media screen and (max-width: 950px) {
+@media (max-width: 950px) {
   .grid-galeria {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 320px; }
@@ -85,7 +187,7 @@ header nav img {
     grid-column: span 1;
     grid-row: span 1; } }
 
-@media screen and (max-width: 850px) {
+@media (max-width: 850px) {
   .serika {
     flex-direction: column; }
   .serika div {
@@ -94,7 +196,7 @@ header nav img {
   .serika img {
     display: none; } }
 
-@media screen and (max-width: 784px) {
+@media (max-width: 784px) {
   header {
     flex-direction: column;
     position: static; }
@@ -139,7 +241,7 @@ header nav img {
   .categorias .categorias-contenedor div {
     width: 100%; } }
 
-@media screen and (max-width: 504px) {
+@media (max-width: 504px) {
   header nav ul {
     flex-direction: column; }
   header nav ul li {
@@ -181,12 +283,12 @@ header nav img {
   .boton {
     padding: 6px 12px; } }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
   .hero h2 {
     padding: 5px;
     font-size: 35px; } }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .grid-galeria {
     grid-template-columns: 1fr; }
   .grid-item {
