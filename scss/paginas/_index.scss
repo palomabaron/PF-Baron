@@ -299,3 +299,17 @@
     
     }
 }
+
+.fixed {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    z-index: 1000;
+    a {
+        display: block;
+        img {
+            width: 60px;
+            height: 60px
+        }
+    }
+}
