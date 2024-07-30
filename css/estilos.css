@@ -27,6 +27,12 @@ header nav img {
 .boton:hover {
   background-color: #b38e5e; }
 
+.home-call-to-action-slider::before {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.home-call-to-action-slider .home-cta-slider-content {
+  color: #ffffff; }
+
 .hero {
   width: 100%;
   height: calc(100vh - 204px);
@@ -150,6 +156,106 @@ header nav img {
       grid-column: span 2; }
     .grid-galeria .grid-item.img-3 {
       grid-row: span 2; }
+
+.home-call-to-action-slider {
+  position: relative;
+  height: 600px;
+  background-image: url("../img/homeslidercalltoaction.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .home-call-to-action-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px; }
+  .home-call-to-action-slider .home-cta-slider-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    max-width: 600px; }
+    .home-call-to-action-slider .home-cta-slider-content .home-cta-slider-text {
+      padding: 20px; }
+      .home-call-to-action-slider .home-cta-slider-content .home-cta-slider-text h2 {
+        font-size: 36px;
+        margin-bottom: 10px; }
+      .home-call-to-action-slider .home-cta-slider-content .home-cta-slider-text p {
+        font-size: 18px;
+        margin-bottom: 20px; }
+
+.preguntas-frecuentes {
+  margin-top: 150px;
+  margin-bottom: 150px; }
+  .preguntas-frecuentes .accordion-flush {
+    margin: 10px;
+    padding: 50px; }
+    .preguntas-frecuentes .accordion-flush h2 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 600;
+      color: #333; }
+    .preguntas-frecuentes .accordion-flush .accordion-button {
+      font-weight: bold;
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 5px; }
+      .preguntas-frecuentes .accordion-flush .accordion-button:focus, .preguntas-frecuentes .accordion-flush .accordion-button.collapsed:focus {
+        box-shadow: none;
+        background-color: #d1a38a;
+        border-color: #d1a38a;
+        color: white; }
+      .preguntas-frecuentes .accordion-flush .accordion-button:active {
+        background-color: #d1a38a;
+        border-color: #d1a38a;
+        color: white; }
+  .preguntas-frecuentes .accordion .accordion-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden; }
+    .preguntas-frecuentes .accordion .accordion-item .accordion-header {
+      background-color: #e9ecef;
+      border-bottom: 1px solid #ddd;
+      border-radius: 5px 5px 0 0;
+      padding: 10px 15px; }
+    .preguntas-frecuentes .accordion .accordion-item .accordion-body {
+      padding: 15px;
+      background-color: #ffffff;
+      color: #333;
+      font-size: 16px;
+      border-top: 1px solid #ddd; }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  flex-wrap: wrap; }
+  .container .item {
+    text-align: center;
+    max-width: 200px;
+    margin: 20px; }
+    .container .item img {
+      width: 50px;
+      height: auto;
+      margin-bottom: 10px; }
+    .container .item h3 {
+      margin: 10px 0 5px 0;
+      font-size: 18px; }
+    .container .item p {
+      margin: 0;
+      font-size: 14px;
+      color: #000000; }
 
 @media (max-width: 1200px) {
   .card {

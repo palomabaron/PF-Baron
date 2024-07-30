@@ -34,3 +34,19 @@ header nav img {
 .boton:hover {
     background-color: #b38e5e;
 }
+
+// Variables 
+
+$overlay-color: rgba(0, 0, 0, 0.6);
+$text-color: #ffffff;
+
+.home-call-to-action-slider {
+    // ...
+    &::before {
+        background-color: $overlay-color;
+    }
+    .home-cta-slider-content {
+        color: $text-color;
+        // ...
+    }
+}
