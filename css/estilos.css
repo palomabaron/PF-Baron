@@ -268,6 +268,219 @@ header nav img {
       width: 60px;
       height: 60px; }
 
+.nosotros1, .nosotros2 {
+  background-color: #f2f2f2;
+  padding: 40px 20px; }
+  .nosotros1 .contenido, .nosotros2 .contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: 20px auto;
+    flex-wrap: wrap; }
+  .nosotros1 .imagen, .nosotros2 .imagen {
+    flex: 1;
+    margin-left: 60px;
+    margin-right: 60px;
+    order: 2; }
+    .nosotros1 .imagen img, .nosotros2 .imagen img {
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
+  .nosotros1 .texto, .nosotros2 .texto {
+    flex: 1;
+    order: 1;
+    padding: 20px; }
+    .nosotros1 .texto h2, .nosotros2 .texto h2 {
+      font-size: 28px;
+      margin-bottom: 10px; }
+    .nosotros1 .texto p, .nosotros2 .texto p {
+      font-size: 16px;
+      margin-bottom: 20px; }
+  .nosotros1.nosotros1 .imagen, .nosotros2.nosotros1 .imagen {
+    order: 2;
+    margin-left: 60px; }
+  .nosotros1.nosotros1 .texto, .nosotros2.nosotros1 .texto {
+    order: 1; }
+  .nosotros1.nosotros2 .imagen, .nosotros2.nosotros2 .imagen {
+    order: 1;
+    margin-right: 60px; }
+  .nosotros1.nosotros2 .texto, .nosotros2.nosotros2 .texto {
+    order: 2; }
+
+.productos {
+  padding: 70px;
+  margin-top: 10px; }
+  .productos h2 {
+    text-align: center;
+    padding: 5px; }
+  .productos p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0; }
+  .productos .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px; }
+    .productos .cards .card {
+      background: #f5f5f5;
+      border-radius: 5px;
+      overflow: hidden;
+      width: calc(25% - 40px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease; }
+      .productos .cards .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+      .productos .cards .card img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover; }
+      .productos .cards .card .card-content {
+        padding: 23px;
+        text-align: center; }
+        .productos .cards .card .card-content h3 {
+          font-size: 20px;
+          margin: 10px 0;
+          padding: 10px; }
+        .productos .cards .card .card-content p {
+          font-size: 14px;
+          color: #333;
+          margin-top: 5px; }
+        .productos .cards .card .card-content a.boton {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #d1a38a;
+          color: #ffffff;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bold;
+          transition: background-color 0.3s ease; }
+          .productos .cards .card .card-content a.boton:hover {
+            background-color: #b77f6e; }
+
+.call-to-action-slider {
+  position: relative;
+  height: 500px;
+  background-image: url("../img/calltoaction2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .call-to-action-slider .cta-slider-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    max-width: 600px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .call-to-action-slider .cta-slider-content .cta-slider-text {
+      padding: 20px; }
+      .call-to-action-slider .cta-slider-content .cta-slider-text h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        font-weight: bold; }
+      .call-to-action-slider .cta-slider-content .cta-slider-text p {
+        font-size: 18px;
+        margin-bottom: 20px; }
+      .call-to-action-slider .cta-slider-content .cta-slider-text .boton {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #d1a38a;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease; }
+        .call-to-action-slider .cta-slider-content .cta-slider-text .boton:hover {
+          background-color: #b5806a; }
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden; }
+  .slider .slide {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .slider .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(70%); }
+    .slider .slide .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px; }
+      .slider .slide .overlay h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px; }
+      .slider .slide .overlay p {
+        font-size: 1.5rem; }
+
+.workshops {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 50px;
+  background-color: #f7f7f7; }
+  .workshops .workshop-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 45%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; }
+    .workshops .workshop-card:hover {
+      transform: translateY(-10px); }
+    .workshops .workshop-card .image {
+      width: 100%;
+      height: 200px;
+      overflow: hidden; }
+      .workshops .workshop-card .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .workshops .workshop-card .content {
+      padding: 20px; }
+      .workshops .workshop-card .content .text h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #333; }
+      .workshops .workshop-card .content .text h6 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        color: #777; }
+      .workshops .workshop-card .content .text p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #555; }
+      .workshops .workshop-card .content .text ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px; }
+        .workshops .workshop-card .content .text ul li {
+          font-size: 1rem;
+          margin-bottom: 10px;
+          color: #444; }
+
 footer {
   background-color: #000000;
   color: #ffffff;
