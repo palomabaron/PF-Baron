@@ -765,6 +765,11 @@ footer {
     text-decoration: none;
 }
 
+.footer-logo img {
+    max-width: 160px;
+    height: auto;
+}
+
 /**-----Responsive-----*/ 
 /* Media Queries */
 

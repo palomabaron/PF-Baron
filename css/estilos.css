@@ -492,11 +492,9 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px; }
-    footer .footer-container .footer-logo {
-      width: 160px;
-      height: 160px;
-      display: flex;
-      justify-content: flex-start; }
+    footer .footer-container .footer-logo img {
+      max-width: 160px;
+      height: auto; }
     footer .footer-container .footer-section {
       flex: 1 1 300px;
       margin: 10px; }
