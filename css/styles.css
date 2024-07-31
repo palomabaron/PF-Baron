@@ -193,10 +193,6 @@ header nav img {
     margin: 10px 0;
     padding: 10px;
 }
-.preguntas-frecuentes {
-    margin-top: 150px; 
-    margin-bottom: 150px; 
-}
 
 .grid-galeria{
     width: 100%;
@@ -228,6 +224,44 @@ header nav img {
 .img-3 {
     grid-row: span 2;
 }
+
+.preguntas-frecuentes {
+    margin-top: 150px; 
+    margin-bottom: 150px; 
+    padding: 0 20px; 
+}
+
+.accordion-button {
+    background-color: #f8f9fa; 
+    color: #000;
+    border: 1px solid #dee2e6; 
+    box-shadow: none; 
+    font-weight: bold; 
+    padding: 10px 15px; 
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #eedcb7; 
+    border-color: #fdf0dc; 
+}
+
+.accordion-body {
+    background-color: #ffffff; 
+    color: #000; 
+    padding: 15px; 
+}
+
+.accordion-header {
+    margin-bottom: 0;
+}
+
+.accordion-item {
+    border: 1px solid #dee2e6; 
+    border-radius: 4px; 
+    margin-bottom: 10px; 
+}
+
 
 /* Slider de Llamado a la Acción Index */
 .home-call-to-action-slider {
