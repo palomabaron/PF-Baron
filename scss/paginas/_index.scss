@@ -208,56 +208,68 @@
         }
     }
 }
+
 .preguntas-frecuentes {
     margin-top: 150px;
     margin-bottom: 150px;
+    padding: 0 20px; // Añade padding para dispositivos móviles
+
     .accordion {
         &-flush {
-            margin: 10px;
-            padding: 50px;
+            margin: 0; // Ajustar si el margen es necesario
+            padding: 0; // Ajustar si el padding es necesario
+
             h2 {
                 text-align: center;
                 font-size: 28px;
                 font-weight: 600;
                 color: #333;
-            }
-            .accordion-button {
-                font-weight: bold;
-                background-color: #f8f9fa; 
-                border: 1px solid #ddd;
-                border-radius: 5px; 
-                &:focus,
-                &.collapsed:focus {
-                    box-shadow: none;
-                    background-color: #d1a38a;
-                    border-color: #d1a38a;
-                    color: white;
-                }
-                &:active {
-                    background-color: #d1a38a;
-                    border-color: #d1a38a;
-                    color: white;
-                }
+                margin-bottom: 20px; // Añadir margen inferior para separación
             }
         }
+
         .accordion-item {
-            background-color: #f9f9f9; 
+            background-color: #f9f9f9;
             border: 1px solid #ddd;
-            border-radius: 5px; 
+            border-radius: 5px;
             margin-bottom: 10px;
             overflow: hidden;
+
             .accordion-header {
-                background-color: #e9ecef; 
-                border-bottom: 1px solid #ddd; 
-                border-radius: 5px 5px 0 0; 
+                background-color: #e9ecef;
+                border-bottom: 1px solid #ddd;
+                border-radius: 5px 5px 0 0;
                 padding: 10px 15px;
+
+                .accordion-button {
+                    font-weight: bold;
+                    background-color: #f8f9fa;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    padding: 10px 15px; // Ajusta el padding para los botones
+
+                    &:focus,
+                    &.collapsed:focus {
+                        box-shadow: none;
+                        background-color: #d1a38a;
+                        border-color: #d1a38a;
+                        color: white;
+                    }
+
+                    &:active {
+                        background-color: #d1a38a;
+                        border-color: #d1a38a;
+                        color: white;
+                    }
+                }
             }
+
             .accordion-body {
                 padding: 15px;
-                background-color: #ffffff; 
-                color: #333; 
-                font-size: 16px; 
-                border-top: 1px solid #ddd; 
+                background-color: #ffffff;
+                color: #333;
+                font-size: 16px;
+                border-top: 1px solid #ddd;
             }
         }
     }

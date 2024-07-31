@@ -193,29 +193,17 @@ header nav img {
 
 .preguntas-frecuentes {
   margin-top: 150px;
-  margin-bottom: 150px; }
+  margin-bottom: 150px;
+  padding: 0 20px; }
   .preguntas-frecuentes .accordion-flush {
-    margin: 10px;
-    padding: 50px; }
+    margin: 0;
+    padding: 0; }
     .preguntas-frecuentes .accordion-flush h2 {
       text-align: center;
       font-size: 28px;
       font-weight: 600;
-      color: #333; }
-    .preguntas-frecuentes .accordion-flush .accordion-button {
-      font-weight: bold;
-      background-color: #f8f9fa;
-      border: 1px solid #ddd;
-      border-radius: 5px; }
-      .preguntas-frecuentes .accordion-flush .accordion-button:focus, .preguntas-frecuentes .accordion-flush .accordion-button.collapsed:focus {
-        box-shadow: none;
-        background-color: #d1a38a;
-        border-color: #d1a38a;
-        color: white; }
-      .preguntas-frecuentes .accordion-flush .accordion-button:active {
-        background-color: #d1a38a;
-        border-color: #d1a38a;
-        color: white; }
+      color: #333;
+      margin-bottom: 20px; }
   .preguntas-frecuentes .accordion .accordion-item {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -227,6 +215,21 @@ header nav img {
       border-bottom: 1px solid #ddd;
       border-radius: 5px 5px 0 0;
       padding: 10px 15px; }
+      .preguntas-frecuentes .accordion .accordion-item .accordion-header .accordion-button {
+        font-weight: bold;
+        background-color: #f8f9fa;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px 15px; }
+        .preguntas-frecuentes .accordion .accordion-item .accordion-header .accordion-button:focus, .preguntas-frecuentes .accordion .accordion-item .accordion-header .accordion-button.collapsed:focus {
+          box-shadow: none;
+          background-color: #d1a38a;
+          border-color: #d1a38a;
+          color: white; }
+        .preguntas-frecuentes .accordion .accordion-item .accordion-header .accordion-button:active {
+          background-color: #d1a38a;
+          border-color: #d1a38a;
+          color: white; }
     .preguntas-frecuentes .accordion .accordion-item .accordion-body {
       padding: 15px;
       background-color: #ffffff;
