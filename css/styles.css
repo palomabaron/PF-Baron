@@ -28,7 +28,7 @@ header nav img {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease;
 }
 
 .boton:hover {
@@ -52,8 +52,8 @@ header nav img {
     align-items: center;
 }
 
-.hero h2 {
-    font-size:35px;
+.hero h1 {
+    font-size:60px;
     color: white;
     padding: 10px;
 }
@@ -154,6 +154,7 @@ header nav img {
     margin-top: 70px;
     margin-bottom: 40px;
     padding: 40px;
+    transition: 1s;
 }
 
 .destacados h2 {
@@ -173,7 +174,6 @@ header nav img {
     border-radius: 5px;
     overflow: hidden;
     width: calc(25% - 40px); 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 60px;
 }
 
@@ -186,6 +186,10 @@ header nav img {
 .destacados .card-content {
     padding: 23px;
     text-align: center;
+}
+.destacados .cards div:hover {
+    transform: scale(1.09);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .destacados .card-content h3 {
