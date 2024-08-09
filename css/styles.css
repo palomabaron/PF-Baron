@@ -585,23 +585,21 @@ header nav img {
     object-fit: cover;
 }
 
+
 .proceso-creativo {
     text-align: center;
     margin: 40px 0;
-
     h2 {
         font-size: 2rem;
         margin-bottom: 20px;
     }
-
     .proceso-container {
         display: flex;
         flex-direction: column;
         gap: 40px;
         max-width: 1200px;
         margin: 0 auto;
-        position: relative;   
-        }
+        position: relative;
         .proceso-item {
             display: flex;
             align-items: center;
@@ -615,7 +613,7 @@ header nav img {
                 }
                 .proceso-description {
                     text-align: left;
-                    margin-left: 10px;
+                    margin-left: 20px;
                 }
             }
             &:nth-child(even) {
@@ -624,7 +622,7 @@ header nav img {
                 }
                 .proceso-description {
                     text-align: right;
-                    margin-right: 10px;
+                    margin-right: 20px;
                 }
             }
             .proceso-icon {
@@ -667,14 +665,62 @@ header nav img {
                 background-color: #ddd;
                 z-index: 1;
             }
-            .proceso-icon, .proceso-description {
+            .proceso-icon,
+            .proceso-description {
                 position: relative;
                 z-index: 2;
             }
         }
     }
+}
 
 
+/**-----TESTIMONIOS-----*/
+
+.testimonios {
+    padding: 60px 20px;
+    background-color: #000000;
+    text-align: center;
+    h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: #ffffff;
+    }
+    .testimonios-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .testimonio-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        margin: 10px;
+        .testimonio-img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.4;
+        }
+    }
+}
 
 /**-----WORKSHOPS-----*/
 
