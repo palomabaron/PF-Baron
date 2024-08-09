@@ -1,7 +1,6 @@
 .nosotros1, .nosotros2 {
     background-color: #f2f2f2;
     padding: 40px 20px;
-
     .contenido {
         display: flex;
         align-items: center;
@@ -12,44 +11,99 @@
     }
     .imagen {
         flex: 1;
-        margin-left: 60px; 
-        margin-right: 60px; 
-        order: 2; 
+        order: 2;
+        margin: 0 60px; 
         img {
             width: 100%;
             height: auto;
             object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     }
     .texto {
         flex: 1;
-        order: 1; 
-        padding: 20px; 
+        padding: 20px;
         h2 {
             font-size: 28px;
             margin-bottom: 10px;
+            color: #000;
         }
         p {
             font-size: 16px;
             margin-bottom: 20px;
+            color: #555;
+        }
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            &:hover {
+                background-color: #333;
+            }
         }
     }
+
     &.nosotros1 {
         .imagen {
-            order: 2;
             margin-left: 60px;
+            order: 2;
         }
+
         .texto {
             order: 1;
         }
     }
+
     &.nosotros2 {
         .imagen {
-            order: 1;
             margin-right: 60px;
+            order: 1;
         }
+
         .texto {
             order: 2;
+        }
+    }
+}
+.testimonios {
+    background-color: #e0e0e0;
+    padding: 40px 20px;
+
+    .contenido {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .testimonio {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            p {
+                font-size: 16px;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            h4 {
+                font-size: 14px;
+                color: #555;
+                font-weight: normal;
+            }
         }
     }
 }

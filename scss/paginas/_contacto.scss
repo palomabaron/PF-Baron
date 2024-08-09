@@ -1,0 +1,135 @@
+/**-----CAROUSEL-----*/
+
+.carousel {
+    &.slide {
+        .carousel-inner {
+            .carousel-item {
+                &.active {
+                    img {
+                        width: 100%;
+                        height: 400px;
+                        object-fit: cover; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**-----FORMULARIO DE CONTACTO-----*/
+
+.form-image {
+    padding: 50px 0;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 60px; 
+        align-items: stretch; 
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .form-container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #000;
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+
+                label {
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                    color: #555;
+                }
+
+                input,
+                select,
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                }
+
+                .form-row {
+                    display: flex;
+                    gap: 10px;
+
+                    .col {
+                        flex: 1;
+                    }
+                }
+            }
+
+            .button-group {
+                display: flex;
+                justify-content: space-between;
+
+                .boton {
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    background-color: #007bff;
+                    color: #fff;
+                    font-size: 1rem;
+
+                    &:hover {
+                        background-color: #0056b3;
+                    }
+                }
+            }
+        }
+        .image-container {
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+                border-radius: 10px;
+            }
+        }
+    }
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+
+    .item {
+        text-align: center;
+        max-width: 200px;
+        margin: 20px;
+
+        img {
+            width: 50px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin: 10px 0 5px 0;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            color: #000000;
+        }
+    }
+}
