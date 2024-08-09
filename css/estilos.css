@@ -377,9 +377,8 @@ header nav img {
     order: 2; }
 
 .proceso-creativo {
-  padding: 40px 20px;
-  background-color: #f8f8f8;
-  text-align: center; }
+  text-align: center;
+  margin: 40px 0; }
   .proceso-creativo h2 {
     font-size: 2rem;
     margin-bottom: 20px; }
@@ -389,27 +388,18 @@ header nav img {
     justify-content: space-around;
     gap: 20px; }
     .proceso-creativo .proceso-container .proceso-item {
-      flex: 1 1 200px;
-      max-width: 300px;
-      margin: 10px;
-      background-color: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+      flex: 1 1 calc(20% - 20px);
+      max-width: 20%;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
       .proceso-creativo .proceso-container .proceso-item img {
         width: 100%;
         height: auto;
-        border-bottom: 1px solid #ddd;
-        border-radius: 8px 8px 0 0; }
+        border-radius: 8px;
+        margin-bottom: 10px; }
       .proceso-creativo .proceso-container .proceso-item p {
-        padding: 10px;
-        font-size: 1rem;
-        color: #333;
-        text-align: left;
-        margin: 0; }
-        .proceso-creativo .proceso-container .proceso-item p strong {
-          display: block;
-          font-weight: bold; }
+        font-size: 0.9rem;
+        line-height: 1.4; }
 
 /**-----TESTIMONIOS-----*/
 .testimonios {
