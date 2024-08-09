@@ -799,6 +799,8 @@ footer {
       footer .footer-bottom p a:hover {
         text-decoration: underline; }
 
+/**-----Responsive-----*/
+/* Media Queries */
 @media (max-width: 1200px) {
   .card {
     width: calc(50% - 40px); }
@@ -904,25 +906,6 @@ footer {
   .boton {
     padding: 8px 16px; } }
 
-@media (max-width: 768px) {
-  .proceso-container .proceso-item {
-    flex-direction: column;
-    text-align: center; }
-    .proceso-container .proceso-item:nth-child(odd) .proceso-icon {
-      order: 0;
-      margin-bottom: 20px; }
-    .proceso-container .proceso-item:nth-child(odd) .proceso-description {
-      text-align: center;
-      margin-left: 0; }
-    .proceso-container .proceso-item:nth-child(even) .proceso-icon {
-      order: 0;
-      margin-bottom: 20px; }
-    .proceso-container .proceso-item:nth-child(even) .proceso-description {
-      text-align: center;
-      margin-right: 0; }
-    .proceso-container .proceso-item::before {
-      content: none; } }
-
 @media (max-width: 480px) {
   h2 {
     font-size: 1.5rem; }
@@ -932,29 +915,7 @@ footer {
   .proceso-container .proceso-item .proceso-description h3 {
     font-size: 1rem; }
   .proceso-container .proceso-item .proceso-description p {
-    font-size: 0.8rem; } }
-
-@media (min-width: 600px) {
-  .categorias .categorias-contenedor div {
-    width: 100%; } }
-
-@media (max-width: 504px) {
-  header nav ul {
-    flex-direction: column; }
-  header nav ul li {
-    margin: 0;
-    text-align: center; }
-  header nav ul li a {
-    font-size: 16px; }
-  .nosotros1 .contenido, .nosotros2 .contenido {
-    flex-direction: column; }
-  .nosotros1 .imagen,
-  .nosotros2 .imagen,
-  .nosotros1 .texto,
-  .nosotros2 .texto {
-    max-width: 100%; } }
-
-@media (max-width: 480px) {
+    font-size: 0.8rem; }
   .overlay h2 {
     font-size: 1.5rem; }
   .overlay p {
