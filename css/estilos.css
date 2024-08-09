@@ -384,32 +384,76 @@ header nav img {
     margin-bottom: 20px; }
   .proceso-creativo .proceso-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px; }
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; }
     .proceso-creativo .proceso-container .proceso-item {
-      flex: 1 1 calc(20% - 20px);
-      max-width: 20%;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
-      .proceso-creativo .proceso-container .proceso-item img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 10px; }
-      .proceso-creativo .proceso-container .proceso-item p {
-        font-size: 0.9rem;
-        line-height: 1.4; }
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 10px;
+      background: #fff;
+      border-radius: 8px; }
+      .proceso-creativo .proceso-container .proceso-item:nth-child(odd) .proceso-icon {
+        order: 1; }
+      .proceso-creativo .proceso-container .proceso-item:nth-child(odd) .proceso-description {
+        text-align: left;
+        margin-left: 20px; }
+      .proceso-creativo .proceso-container .proceso-item:nth-child(even) .proceso-icon {
+        order: -1; }
+      .proceso-creativo .proceso-container .proceso-item:nth-child(even) .proceso-description {
+        text-align: right;
+        margin-right: 20px; }
+      .proceso-creativo .proceso-container .proceso-item .proceso-icon {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        margin: 0; }
+        .proceso-creativo .proceso-container .proceso-item .proceso-icon img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover; }
+      .proceso-creativo .proceso-container .proceso-item .proceso-description {
+        flex: 1; }
+        .proceso-creativo .proceso-container .proceso-item .proceso-description h3 {
+          margin: 0;
+          font-size: 20px;
+          font-weight: bold; }
+        .proceso-creativo .proceso-container .proceso-item .proceso-description p {
+          margin: 0;
+          font-size: 16px;
+          line-height: 1.4; }
+      .proceso-creativo .proceso-container .proceso-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        background-color: #ddd;
+        z-index: 1; }
+      .proceso-creativo .proceso-container .proceso-item .proceso-icon,
+      .proceso-creativo .proceso-container .proceso-item .proceso-description {
+        position: relative;
+        z-index: 2; }
 
 /**-----TESTIMONIOS-----*/
 .testimonios {
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  background-color: #000000;
   text-align: center; }
   .testimonios h2 {
     font-size: 32px;
     margin-bottom: 30px;
-    color: #333; }
+    color: #ffffff; }
   .testimonios .testimonios-container {
     display: flex;
     flex-wrap: wrap;
@@ -791,6 +835,25 @@ footer {
     grid-column: span 1;
     grid-row: span 1; } }
 
+@media (max-width: 888px) {
+  .proceso-container .proceso-item {
+    flex-direction: column;
+    text-align: center; }
+    .proceso-container .proceso-item:nth-child(odd) .proceso-icon {
+      order: 0;
+      margin-bottom: 20px; }
+    .proceso-container .proceso-item:nth-child(odd) .proceso-description {
+      text-align: center;
+      margin-left: 0; }
+    .proceso-container .proceso-item:nth-child(even) .proceso-icon {
+      order: 0;
+      margin-bottom: 20px; }
+    .proceso-container .proceso-item:nth-child(even) .proceso-description {
+      text-align: center;
+      margin-right: 0; }
+    .proceso-container .proceso-item::before {
+      content: none; } }
+
 @media (max-width: 850px) {
   .serika {
     flex-direction: column; }
@@ -840,6 +903,36 @@ footer {
     font-size: 0.9rem; }
   .boton {
     padding: 8px 16px; } }
+
+@media (max-width: 768px) {
+  .proceso-container .proceso-item {
+    flex-direction: column;
+    text-align: center; }
+    .proceso-container .proceso-item:nth-child(odd) .proceso-icon {
+      order: 0;
+      margin-bottom: 20px; }
+    .proceso-container .proceso-item:nth-child(odd) .proceso-description {
+      text-align: center;
+      margin-left: 0; }
+    .proceso-container .proceso-item:nth-child(even) .proceso-icon {
+      order: 0;
+      margin-bottom: 20px; }
+    .proceso-container .proceso-item:nth-child(even) .proceso-description {
+      text-align: center;
+      margin-right: 0; }
+    .proceso-container .proceso-item::before {
+      content: none; } }
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem; }
+  .proceso-container .proceso-item .proceso-icon {
+    width: 120px;
+    height: 120px; }
+  .proceso-container .proceso-item .proceso-description h3 {
+    font-size: 1rem; }
+  .proceso-container .proceso-item .proceso-description p {
+    font-size: 0.8rem; } }
 
 @media (min-width: 600px) {
   .categorias .categorias-contenedor div {

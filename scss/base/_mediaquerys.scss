@@ -56,6 +56,39 @@
       grid-row: span 1;
   }
 }
+@media (max-width: 888px) {
+    .proceso-container {
+        .proceso-item {
+            flex-direction: column;
+            text-align: center;
+            
+            &:nth-child(odd) {
+                .proceso-icon {
+                    order: 0;
+                    margin-bottom: 20px;
+                }
+                .proceso-description {
+                    text-align: center;
+                    margin-left: 0;
+                }
+            }
+
+            &:nth-child(even) {
+                .proceso-icon {
+                    order: 0;
+                    margin-bottom: 20px;
+                }
+                .proceso-description {
+                    text-align: center;
+                    margin-right: 0;
+                }
+            }
+            &::before {
+                content: none; 
+            }
+        }
+    }
+}
 
 @media (max-width: 850px) {
   .serika {
@@ -141,7 +174,70 @@
   .boton {
       padding: 8px 16px;
   }
+  
+  
 }
+
+@media (max-width: 768px) {
+    .proceso-container {
+        .proceso-item {
+            flex-direction: column;
+            text-align: center;
+
+            &:nth-child(odd) {
+                .proceso-icon {
+                    order: 0;
+                    margin-bottom: 20px;
+                }
+                .proceso-description {
+                    text-align: center;
+                    margin-left: 0;
+                }
+            }
+
+            &:nth-child(even) {
+                .proceso-icon {
+                    order: 0;
+                    margin-bottom: 20px;
+                }
+                .proceso-description {
+                    text-align: center;
+                    margin-right: 0;
+                }
+            }
+
+            &::before {
+                content: none; 
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .proceso-container {
+        .proceso-item {
+            .proceso-icon {
+                width: 120px;
+                height: 120px;
+            }
+
+            .proceso-description {
+                h3 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
 
 @media (min-width: 600px) {
   .categorias .categorias-contenedor div {
