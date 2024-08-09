@@ -1,3 +1,9 @@
+@import '../base/buttons';
+
+.boton {
+  @include button-style;
+}
+
 .hero {
     width: 100%;
     height: calc(100vh - 204px);
@@ -89,51 +95,50 @@
     }
 
 }
-
+@import "../base/generales" ; 
 .destacados {
     text-align: center;
     margin-top: 70px;
     margin-bottom: 40px;
     padding: 40px;
+  
     h2 {
-        margin-bottom: 30px;
+      margin-bottom: 30px;
     }
+  
     .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-        margin-top: 70px;
-        .card {
-            background: #ffffff;
-            border-radius: 5px;
-            overflow: hidden;
-            width: calc(25% - 40px); 
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 60px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; 
-            img {
-                width: 100%;
-                height: 330px; 
-                object-fit: cover;
-            }
-            .card-content {
-                padding: 23px;
-                text-align: center;
-
-                h3 {
-                    font-size: 20px;
-                    margin: 10px 0;
-                    padding: 10px;
-                }
-            }
-            &:hover { 
-                transform: scale(1.05);
-                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 70px;
+  
+      .card {
+        @extend %card-base;
+        width: calc(25% - 40px); 
+        margin-bottom: 60px;
+  
+        img {
+          @extend %card-img-base;
         }
+  
+        .card-content {
+          @extend %card-content-base;
+  
+          h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            padding: 10px;
+          }
+        }
+  
+        &:hover { 
+          transform: scale(1.05);
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+      }
     }
-}
+  }
 
 
 .grid-galeria {
